@@ -1,0 +1,19 @@
+---
+title: ReversoWiki Page
+layout: base.hbs
+eleventyComputed:
+  key: "ReversoWiki: {{title}}"
+---
+<div class="page">
+<div class="about">
+<h1 class="header">{{title}}</h1>
+<h4>{{desc}}</h4>
+</div>
+<div class="content">
+{{{content}}}
+</div>
+<footer class="footer">
+<hr>
+Generated at <span class="date">{{curDate}}</span> | Unix time: <span class="unixtime">{{curUnixTime}}</span>
+</footer>
+</div>

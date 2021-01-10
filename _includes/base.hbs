@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{#if desc}}
+<meta name="description" content="{{desc}}">
+{{/if}}
+{{#if author}}
+<meta name="author" content="{{author}}">
+{{/if}}
+<title> {{title}} </title>
+{{#unless styleLess}}
+<link rel="stylesheet" href="/styles/main.css"></link>
+{{/unless}}
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="keywords" content="Internals, Reverse Engineering, Reverse Engineered, {{title}}">
+</head>
+<body>
+{{{content}}}
+</body>
+
+</html>
